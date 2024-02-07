@@ -15,3 +15,6 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.svm import SVC
 from xgboost import XGBClassifier
 from sklearn import metrics
+
+# IMPORT MODEL EVALUATION AND HYPERPARAMETER TUNING
+from sklearn.model_selection import cross_val_score, GridSearchCV
