@@ -18,3 +18,6 @@ from sklearn import metrics
 
 # IMPORT MODEL EVALUATION AND HYPERPARAMETER TUNING
 from sklearn.model_selection import cross_val_score, GridSearchCV
+
+# import dataset
+mydf = pd.read_csv("heart.csv")
