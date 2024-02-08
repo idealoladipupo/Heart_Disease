@@ -39,6 +39,14 @@ print(mydf.isnull().sum())
 
 # Checking if maximum heart was achieved by people having very high fasting blood sugar
 
+sns.scatterplot(
+    data=mydf, x="fbs", y="thalach", hue="fbs", palette="viridis", legend="full"
+)
+plt.figure(figsize=(8, 6))
+plt.title("Relationship between Fasting Blood Sugar and Max Heart Rate")
+plt.xlabel("Fasting Blood Sugar (1: High, 0: Normal)")
+plt.ylabel("Max Heart Rate")
+plt.show()
 
 # age distribution of patients
 plt.figure(figsize=(12, 8))
