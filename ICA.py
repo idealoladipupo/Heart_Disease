@@ -35,11 +35,14 @@ print(mydf.tail())
 print("\nChecking for Missing Values in the Datset:")
 print(mydf.isnull().sum())
 
-
 # Visualise the distributioof numerical features
+
+# Checking if maximum heart was achieved by people having very high fasting blood sugar
+
+
 # age distribution of patients
 plt.figure(figsize=(12, 8))
-sns.histplot(data=mydf, x="age", kde=True)
+sns.histplot(data=mydf, x="age", kde=True, color="blue")
 plt.title(" Age Distribution of Patients")
 plt.show()
 
