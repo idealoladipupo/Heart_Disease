@@ -54,7 +54,7 @@ sns.histplot(data=mydf, x="age", kde=True, color="blue")
 plt.title(" Age Distribution of Patients")
 plt.show()
 
-# Corellation Matrix Plot
+# Corellation Matrix Plot.....................
 plt.figure(figsize=(10, 8))
 sns.heatmap(mydf.corr(), annot=True, cmap="coolwarm", fmt=".2f", linewidths=0.5)
 plt.title("Correlation Matrix of Numerical Features")
